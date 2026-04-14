@@ -1,0 +1,59 @@
+/*I chose a color family of dark green, blue and white, I chose these colors because green represents the land, which
+is an important aspect that got overlooked in Treaty 6, along with the other treaties. Blue because it's one of the colors
+of the British Union Jack as it signified the colonial authority during that time and also symbolises nature, white for readable text,
+and finally, Yellow  being there for nature, completing the quote of ""as long as the sun shines, the grass grows, and the river flows" 
+being used for a similar reason*/
+
+
+.TextSection {
+  background-color:#0a9048;
+  padding: 3.0rem 2.0rem;
+  margin:   2.0rem 2.0rem;
+  border-radius: 2.5rem;
+}
+p{
+  color: rgb(255, 255, 255);
+  font-size: 1.6rem;
+  line-height: 1.6;
+  font-weight: 550;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+  background-color: #20939b;
+}
+.MediaSection{
+  background-color: #0da353;
+  padding: 5.0rem 3.0rem;
+  margin:   2.0rem 2.0rem;
+  border-radius: 2.5rem;
+
+}
+.MediaDescription{
+  font-size: 1.8rem;
+  text-align: center;
+  color: #ffff00;
+}
+.Title {
+  color: #ffff00;
+  margin-bottom: 1.0rem;
+  text-align: center;
+  font-size: 3.0rem;
+  font-family: 'Times New Roman', Times, serif;
+} 
+.SubTitle {
+  color: #ffff00;
+  margin-bottom: 1.0rem;
+  text-align: center;
+  font-size: 2.0rem;
+  font-family: 'Times New Roman', Times, serif;
+} 
+/*Title and SubTitle are here instead of on the 2nd Page as they will be used for the 3rd page as well*/
+.Link{
+  color: rgb(128, 255, 0);
+} 
+.Source{
+  vertical-align: super;
+  font-size: smaller; 
+
+}
