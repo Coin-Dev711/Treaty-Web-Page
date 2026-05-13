@@ -5,52 +5,51 @@ and finally, Yellow  being there for nature, completing the quote of ""as long a
 being used for a similar reason*/
 
 section {
-  background-color: #0a9048;
+  background-color: #66ce8c; /*Current Best:  #66ce8c ||  #4fd781* (Delete when done)*/
   padding: 3rem 2rem;
   margin: 2rem 2rem;
   border-radius: 2.5rem;
 }
 p {
-  color: rgb(255, 255, 255);
-  font-size: 1.6rem;
-  line-height: 1.6;
+  color: rgb(52, 48, 48);
+}
+.NHeader {
+  /*Navigation Header*/
+  text-align: center;
+  font-size: 3.2rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+body {
+  background-color: #bcdbdb;
+  font-size: 2.4rem;
+  line-height: 160%;
   font-weight: 550;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-body {
-  background-color: #20939b;
-}
-.MediaSection {
-  background-color: #0da353;
-  padding: 5rem 3rem;
-  margin: 2rem 2rem;
-  border-radius: 2.5rem;
-}
-.MediaDescription {
-  font-size: 1.8rem;
-  text-align: center;
-  color: #ffff00;
-}
 .Title {
   color: #ffff00;
   margin-bottom: 1rem;
   text-align: center;
-  font-size: 3rem;
+  font-size: 4rem;
   font-family: "Times New Roman", Times, serif;
 }
 .SubTitle {
   color: #ffff00;
   margin-bottom: 1rem;
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-family: "Times New Roman", Times, serif;
 }
 /*Title and SubTitle are here instead of on the 2nd Page as they will be used for the 3rd page as well*/
 a {
-  color: rgb(128, 255, 0);
+  color: rgb(82, 96, 6); /*Current Best: rgb(82, 96, 6)*/
 }
 .Source {
   vertical-align: super;
   font-size: smaller;
+}
+html {
+  font-size: 62.5%;
 }
