@@ -1,7 +1,7 @@
 /*I chose a color family of dark green, blue and white, I chose these colors because green represents the land, which
 is an important aspect that got overlooked in Treaty 6, along with the other treaties. Blue because it's one of the colors
 of the British Union Jack as it signified the colonial authority during that time and also symbolises nature, white for readable text,
-and finally, Yellow  being there for nature, completing the quote of ""as long as the sun shines, the grass grows, and the river flows" 
+and finally, Yellow being there for the sun and nature, completing the quote of ""as long as the sun shines, the grass grows, and the river flows" 
 being used for a similar reason*/
 
 section {
@@ -10,15 +10,36 @@ section {
   margin: 2rem 2rem;
   border-radius: 2.5rem;
 }
+/*  
+The Background-Color is pretty self explanatory, 
+changing the color of the background with either an rgb function, or a hexadecimal color code.
+
+Padding creates space between the element and the edges of it's border, and in my case, I used 2 font values,
+the first one applying to the top and bottom sides, with the second one applying to the left and right sides
+
+Margin is similar to Padding, but kind of works on a larger scale, instead of creating space 
+between the element and the edges of  it's border, it creates space between the edges of the 
+border and other elements
+
+Border-Radius makes the corners of the border rounded, with larger values increasing the roundedness
+of the corner
+*/
 p {
   color: rgb(52, 48, 48);
 }
-.NHeader {
-  /*Navigation Header*/
+/*
+Color is pretty self explanatory, changing the color of the text
+*/
+
+.NHeader { /*Navigation Header*/
   text-align: center;
   font-size: 3.2rem;
-  font-family: "Times New Roman", Times, serif;
 }
+/*
+Text-Align changes the position of the text, with mine being centered
+
+Font-Size alters the size of the text, with larger values equaling larger text
+*/
 
 body {
   background-color: #bcdbdb;
@@ -26,30 +47,122 @@ body {
   line-height: 160%;
   font-weight: 550;
   font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(52, 48, 48);
 }
+/*
+Background-Color as mentioned previously changes the color of the background
+
+Font-Size as mentioned previously changes the size of the text
+
+Line-Height alters the distance between every line of text in a paragraph 
+(Not referring just to the <p> tag), multiplying off the normal line height, meaning that you can 
+make it a % of the default line height value or a decimal that gets multiplied like 1.4 vs 140%, 
+although these mean the same thing and are just typed differently
+*/
 
 .Title {
-  color: #ffff00;
+  color: #ecec54;
   margin-bottom: 1rem;
   text-align: center;
   font-size: 4rem;
-  font-family: "Times New Roman", Times, serif;
 }
+/*
+Color has mentioned previously chanegs the color
+
+Margin-bottom is a specification of the Margin tag, targetting only the bottom side and creating
+space between the bottom edge and other elements, you could technically do this with
+"margin: 0px 0px 40px 0px" but this looks better I'd say
+
+Text-Align has mentioned previously positions the text
+
+Font-Size has mentioned previously changes the size of the text
+*/
 .SubTitle {
-  color: #ffff00;
+  color: #ecec54;
   margin-bottom: 1rem;
   text-align: center;
   font-size: 2.5rem;
-  font-family: "Times New Roman", Times, serif;
 }
-/*Title and SubTitle are here instead of on the 2nd Page as they will be used for the 3rd page as well*/
+/*
+Color has mentioned previously changes the color
+
+Margin-Bottom has mentioned previously adds space between the bottom edge and other elements
+
+Text-Align has mentioned previously positions the text
+
+Font-Size has mentioned previously changes the size of the text
+*/
 a {
-  color: rgb(82, 96, 6); /*Current Best: rgb(82, 96, 6)*/
+  color: rgb(82, 96, 6)
 }
+/*
+Color has mentioned previously changes the color
+*/
+
+
 .Source {
   vertical-align: super;
   font-size: smaller;
 }
+/*
+Vertical-Align can either make the text it affects superscript or subscript
+
+Font-Size has mentioned previously changes the size of the font, but this time, instead of giving
+a numerical value, I put a keyword
+*/
 html {
   font-size: 62.5%;
+}
+/*
+Font-Size has mentioned previously changes the size of the text, although this time it's used with 
+a % value, which creates the circumstance where the element's default size is 10px, making 
+1rem=10px
+*/
+.FooterInfo{
+  font-size: smaller;
+}
+/*
+Font-Size has mentioned previously, with it's different usage also having been mentioned previously
+*/
+.ImageSection{
+  background-color: #66ce8c; /*Current Best:  #66ce8c ||  #4fd781* (Delete when done)*/
+  padding: 3rem 2rem;
+  margin: 2rem;
+  border-radius: 2.5rem;
+  display: inline-block;
+  margin-right: 12rem;
+
+  transition-property: background-color;
+  transition-duration: 0.6s;
+  transition-timing-function: ease;
+}
+/*ImageSection is a modification of Section and therefore it's first 4 types have already been mentioned
+
+Display can alter how an element flows around other elements, for example, you could make a <div> an 
+inline element or a span a block element, I made my ImageSection an inline block, which allows it to 
+stay on the same line as other elements, while keeping it's width, height and other variables
+
+Margin-Right is another margin specification and therefore works the same as margin-bottom, expect it 
+targets the right side
+
+Transition-Property "dictates" what properties of the element you're changing,  and in this
+case, I used to create a transition that specifically changes the background-color 
+
+Transition Duration dictates how long the transition will take, in this case that being the color change
+
+The Transition-Timing-Function determines the alteration method of a transition, with mine being ease,
+meaning that the transition will start slowly, accelerate and then decelerate at the end 
+*/
+
+.ImageSection:hover{
+  background-color: rgb(0, 255, 68);
+}
+/*
+The :hover suffix after the class/id/element name dictates the activation definition fot the transition 
+or animation
+
+The background-color indicates the end result of the transition/animation
+*/
+img {
+  position: relative;
 }
