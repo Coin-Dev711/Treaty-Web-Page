@@ -25,13 +25,14 @@ Border-Radius makes the corners of the border rounded, with larger values increa
 of the corner
 */
 p {
-  color: rgb(52, 48, 48);
+  color: #292626;
 }
 /*
 Color is pretty self explanatory, changing the color of the text
 */
 
-.NHeader { /*Navigation Header*/
+.NHeader {
+  /*Navigation Header*/
   text-align: center;
   font-size: 3.2rem;
 }
@@ -47,7 +48,6 @@ body {
   line-height: 160%;
   font-weight: 550;
   font-family: Georgia, "Times New Roman", Times, serif;
-  color: rgb(52, 48, 48);
 }
 /*
 Background-Color as mentioned previously changes the color of the background
@@ -61,7 +61,7 @@ although these mean the same thing and are just typed differently
 */
 
 .Title {
-  color: #ecec54;
+  color: #f6f645;
   margin-bottom: 1rem;
   text-align: center;
   font-size: 4rem;
@@ -78,7 +78,7 @@ Text-Align has mentioned previously positions the text
 Font-Size has mentioned previously changes the size of the text
 */
 .SubTitle {
-  color: #ecec54;
+  color: #f6f645;
   margin-bottom: 1rem;
   text-align: center;
   font-size: 2.5rem;
@@ -93,12 +93,11 @@ Text-Align has mentioned previously positions the text
 Font-Size has mentioned previously changes the size of the text
 */
 a {
-  color: rgb(82, 96, 6)
+  color: rgb(82, 96, 6);
 }
 /*
 Color has mentioned previously changes the color
 */
-
 
 .Source {
   vertical-align: super;
@@ -118,14 +117,14 @@ Font-Size has mentioned previously changes the size of the text, although this t
 a % value, which creates the circumstance where the element's default size is 10px, making 
 1rem=10px
 */
-.FooterInfo{
+.FooterInfo {
   font-size: smaller;
 }
 /*
 Font-Size has mentioned previously, with it's different usage also having been mentioned previously
 */
-.ImageSection{
-  background-color: #66ce8c; /*Current Best:  #66ce8c ||  #4fd781* (Delete when done)*/
+.ImageSection {
+  background-color: #66ce8c;
   padding: 3rem 2rem;
   margin: 2rem;
   border-radius: 2.5rem;
@@ -154,7 +153,7 @@ The Transition-Timing-Function determines the alteration method of a transition,
 meaning that the transition will start slowly, accelerate and then decelerate at the end 
 */
 
-.ImageSection:hover{
+.ImageSection:hover {
   background-color: rgb(0, 255, 68);
 }
 /*
@@ -166,3 +165,16 @@ The background-color indicates the end result of the transition/animation
 img {
   position: relative;
 }
+/*
+Position can change the position of an element, with mine being relative, 
+meaning that the element is positioned relative to its normal position, so I can use the top, right, 
+bottom and left properties to move it around, which I did with the Treaty6 image, moving it up 10px when 
+the user hovers over the ImageSection
+*/
+.ImageSection:hover img {
+  transform: translateY(-10px); /* Move image up */
+}
+/*
+I already mentioned the :hover suffix, but I also made images withing the ImageSection to move up 10px when 
+the user hovers over the ImageSection with the transform property
+*/
